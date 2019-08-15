@@ -1,0 +1,477 @@
+body{
+	font-family: "microsoft yahei";
+}
+
+/*首页样式*/
+
+/*顶部状态条样式*/
+.header_con{
+	height: 29px;
+	background-color: #f7f7f7;
+	border-bottom:1px solid #dddddd;
+}
+.header{
+	width: 1200px;
+	height: 29px;
+	margin: 0 auto;
+}
+.welcome{
+	font: 12px/29px "microsoft yahei";
+	color: #666666;
+}
+.user_login_link,.user_welcome,.user_shopping{
+	height: 29px;
+	line-height: 29px;
+}
+.user_login_link a,.user_shopping a{
+	color: #666666;
+}
+.user_login_link a:hover,.user_shopping a:hover{
+	color: #FF8800;
+}
+.user_login_link span,.user_shopping span{
+	margin: 0 15px;
+	color: #cecece;
+}
+/*.user_login_link{
+	display: none;
+}*/
+.user_welcome{
+	display: none;     /*不占位置*/
+}
+.user_welcome em{
+	color: #ff8800;
+}
+
+/*logo,搜索,购物车样式*/
+
+.logo_bar{
+	width: 1200px;
+	height: 115px;
+	margin: 0 auto;
+}
+.logo{
+	width: 151px;
+	height: 59px;
+	margin: 29px 0 0 17px;
+}
+.search{
+	width:616px;
+	height:38px;
+	border: 1px solid #37ab40;
+	margin: 34px 0 0 123px;
+	background: url(../img/quanbu.png) 8px 9px no-repeat;
+}
+.search .input_text{
+	width: 470px;
+	height: 38px;
+	border: 0px;
+	margin-left: 37px;
+	outline: none;
+}
+.search .input_btn{
+	width:100px;
+	height:38px;
+	background-color: #37ab40;
+	border: 0px;
+	font: 14px/38px "microsoft yahei";
+	color: #ffff;
+	cursor: pointer;   /*将鼠标指针放上去的时候变为手*/
+}
+.cart{
+	width: 200px;
+	height: 40px;
+	margin-top: 34px;
+}
+.cart a{
+	width:158px;
+	height:38px;
+	border:1px solid #DDDDDD;
+	background-color: #f7f7f7;
+	font: 14px/38px "microsoft yahei";
+	color: #37AB40;
+	text-indent: 56px;
+	background: url(../img/quanbu.png) 17px -43px no-repeat #F7F7F7;
+}
+.cart span{
+	width: 40px;
+	height: 40px;
+	background-color:#f80;
+	font:14px/40px "microsoft yahei";
+	color: #F7F7F7;
+	text-align: center;
+}
+
+
+
+.sub_menu_con{
+	height: 40px;
+	border-bottom: 2px solid #37AB40;
+}
+.sub_menu{
+	width:1200px;
+	height: 40px;
+	margin: 0 auto;
+}
+.sub_menu h1{
+	width: 200px;
+	height: 40px;
+	background-color:#37AB40;
+	font:14px/40px "microsoft yahei";
+	color: #fff;
+	text-align:center;
+}
+.sub_menu ul{
+	overflow: hidden;
+}
+.sub_menu li{
+	float:left;
+	height:20px;
+	padding: 0 25px;
+	border-left: 1px solid #666666;
+	margin-left: -1px;   /*将边线左移一个像素*/
+	margin-top: 12px;
+}
+.sub_menu li a{
+	font:15px/20px "microsoft yahei";
+	color: #666;
+}
+.sub_menu li a:hover{
+	color: #FF8800;
+}
+
+
+/*左侧菜单样式*/
+.center_con{
+	width: 1200px;
+	height: 270px;
+	margin: 0 auto;
+}
+.center_con .main_menu{
+	width: 200px;
+	height: 270px;
+	overflow: hidden;
+}
+.center_con .main_menu li{
+	width: 198px;
+	height: 44px;
+	border: 1px solid #eee;
+	margin-top: -1px;
+	background: url(../img/quanbu.png) 166px -385px no-repeat;
+}
+.center_con .main_menu li a{
+	display: block;
+	width: 198px;
+	height: 44px;
+	font: 14px/44px "microsoft yahei";
+	color: #333;
+	text-indent: 71px;
+	background: url(../img/quanbu.png) 33px 0px no-repeat;
+}
+.center_con .main_menu li .fruit{
+	background-position: 33px -90px;
+}
+.center_con .main_menu li .seafood{
+	background-position:30px -140px;
+}
+.center_con .main_menu li .meat{
+	background-position:31px -190px;
+}
+.center_con .main_menu li .egg{
+	background-position:33px -240px;
+}
+.center_con .main_menu li .vegetable{
+	background-position:33px -290px;
+}
+.center_con .main_menu li .ice{
+	background-position:33px -340px;
+}
+
+
+
+/*幻灯片样式*/
+.slide_con{
+	width: 760px;
+	height: 270px;
+	position: relative;
+	overflow: hidden;
+}
+.slide_con .slide li{
+	width: 760px;
+	height: 270px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.prev,.next{
+	width: 15px;
+	height: 23px;
+	position: absolute;
+	background: url(../img/quanbu.png) -1px -451px no-repeat;
+	cursor: pointer;     /*光标指针变成手*/
+	left: 11px;
+	top: 122px;
+}
+.next{
+	left: 732px;
+	background: url(../img/quanbu.png) -1px -501px no-repeat;
+}
+.points{
+	position: absolute;
+	width: 100%;
+	height: 11px;
+	left:0;
+	bottom: 9px;
+	text-align:center;
+	font-size: 0px;   /*父级字体设为零解决圆点间距问题*/
+}
+.points li{
+	width: 11px;
+	height: 11px;
+	display:inline-block;
+	background-color:#9f9f9f;
+	margin: 0px 5px;
+	border-radius:50%;
+}
+.points .active{
+	background-color: #CECECE;
+}
+
+.adv{
+	width:240px;
+	height:270px;
+}
+.adv a{
+	float: left;   /*这个浮动转为行内块解决间距问题*/
+	width: 240px;
+	height: 135px;
+}
+
+/* 解决图片出现3像素空白bug的情况 */
+
+.adv a img{
+	display: block;
+}
+
+
+.common_model{
+	width:1200px;
+	height:340px ;
+	margin:18px auto 0;
+}
+.common_model .common_title{
+	font-size:12px;
+	height:38px;
+	border-bottom:2px solid #42ad46;
+}
+.common_model .common_title h3{
+	font:bold 16px/38px "microsoft yahei";
+	color: #37AB40;
+}
+.common_model .common_title ul{
+	height: 14px;
+    margin: 13px 0 0 20px;
+}
+.common_model .common_title li{
+	float: left;
+	margin:0 10px;
+}
+.common_model .common_title li a{
+	color: #666666;
+	line-height: 10px;
+	
+}
+.common_model .common_title li a:hover,.common_model .common_title .more:hover{
+	color: #f80;
+}
+.common_model .common_title .more{
+	height: 38px;
+	line-height: 38px;
+	color: #666666;
+}
+.common_model .common_goods_list{
+	width: 1200px;
+	height: 300px;
+}
+.common_model .common_goods_list .goods_banner{
+	width: 200px;
+	height: 300px;
+}
+.common_model .common_goods_list .goods_list{
+	width: 1000px;
+	height: 300px;
+}
+.common_model .common_goods_list .goods_list li{
+	width: 249px;
+	height: 299px;
+	border-right: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	float: left;
+}
+.common_model .common_goods_list .goods_list li:hover{
+	width: 248px;
+	height: 298px;
+	border: 1px solid #Ff0;
+}
+.common_goods_list .goods_list li h4{
+	height: 52px;
+	font: 14px/52px "microsoft yahei";
+	color: #666666;
+	text-align: center;
+}
+.common_goods_list .goods_list li a{
+	display: block;
+	height: 180px;
+	width: 180px;
+	margin: 0 auto;
+}
+.common_goods_list .goods_list li p{
+	height: 52px;
+	font:bold 20px/52px "microsoft yahei";
+	color: #c40000;
+	text-align: center;
+}
+.footer{
+	height: 145px;
+	border-top: 2px solid #4ab14e;
+	margin-top: 30px;
+}
+.footer .links{
+	text-align: center;
+	margin-top: 40px;
+}
+.footer .links a{
+	color: #4e4e4e;
+}
+.footer .links a:hover{
+	color: #f80;
+}
+.footer .links span{
+	color: #4E4E4E;
+	margin: 0 10px;
+}
+.footer p{
+	text-align: center;
+	line-height: 27px;
+	color:#4e4e4e;
+	margin-top: 10px;
+}
+
+
+
+  /*登陆页样式*/
+.login_header{
+	width: 953px;
+ 	height: 133px;
+ 	margin: 0 auto;
+ }
+.login_header a{
+ 	width: 193px;
+ 	height: 76px;
+ 	display: block;
+ 	margin-top: 28px;
+ }
+.login_form_con{
+	border-top:1px solid #79a652;
+	border-bottom:1px solid #79a652;
+ 	height:482px;
+ 	background-color: #518e17;
+ }
+.login_form{
+ 	width: 953px;
+ 	height: 482px;
+ 	margin: 0 auto;
+ }
+.login_form .login_banner{
+  	margin: 92px 0 0 15px;
+  }
+.login_form .slogan{
+   	color: #FFFFFF;
+   	font-size: 30px;
+   	width: 30px;
+   	height: 293px;
+   	float: left;
+   	text-align: center;
+   	line-height:36px;
+   	margin:82px 0 0 114px;
+   }
+.login_form .form_input_con{
+   	width:368px;
+   	height:378px;
+   	border:1px solid #c6c6c5;
+   	background-color:#fff;
+   	margin-top:50px;
+   }
+.login_footer{
+   	margin-top:0px;
+   	border-top:0px;
+   }
+.form_title{
+   	width:308px;
+   	height:70px;
+   	border-bottom:1px solid #e0e0e0;
+   	margin: 0 auto;
+   }
+.form_title h1{
+   	float: left;
+   	height: 70px;
+   	font:bold 24px/70px "microsoft yahei";
+   	color: #a8a8a8;
+   	margin-left: 44px;
+   }
+.form_title a{
+	float: left;
+	width: 100px;
+	height: 16px;
+	font: 16px/16px "microsoft yahei";
+	color: #5fb42a;
+	text-indent:25px;
+	background: url(../img/quanbu.png) 2px -352px no-repeat;
+	margin: 33px 0 0 36px;
+}
+.form_input_con form{
+	width: 308px;
+	height: 221px;
+	margin: 20px auto 0;
+}
+.form_input_con form .form_group{
+	width: 308px;
+	height: 68px;
+}
+.form_group .input_txt,.form_group .input_pwd{
+	width: 306px;
+	height: 38px;
+	border: 1px solid #E0E0E0;
+	outline: none;     /*消除虚框*/
+	background: url(../img/quanbu.png) 270px 10px no-repeat #f8f8f8;
+	text-indent: 10px;
+}
+.form_group .input_pwd{
+	background-position: 272px -93px;  /*调整文本框中的提示图片*/
+}
+.form_group .error{
+	font: 12px/28px "microsoft yahei";
+	color: #ff5400;
+	display: none;
+}
+.form_group .input_check{
+	margin:5px 10px 0 0;
+}
+.form_group .find_pass{
+	color: #4b4b4b;
+}
+.form_group .find_pass:hover{
+	color: #f80;
+}
+.input_sub{
+	width: 308px;
+	height:40px;
+	background-color: #47aa34;
+	border: 0px;
+	font:24px/40px "microsoft yahei";
+	color: #fff;
+	cursor:pointer;    /*光标响应变为手*/
+}
+
+   
+  
